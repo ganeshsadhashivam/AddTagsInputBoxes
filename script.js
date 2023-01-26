@@ -66,6 +66,8 @@ const removeBtn = document.querySelector("button");
 removeBtn.addEventListener("click", () => {
   //making array empty
   tags.length = 0;
+  count.innerText = 0;
+  input = ul.querySelector("input");
   //removing all li tags
   ul.querySelectorAll("li").forEach((li) => li.remove());
 });
